@@ -3,6 +3,13 @@ React CodeSandbox
 
 <!--dividing-->
 
+[![Build & Deploy](https://github.com/uiwjs/react-codesandbox/workflows/Build%20&%20Deploy/badge.svg)](https://github.com/uiwjs/react-codesandbox/actions)
+[![Issues](https://img.shields.io/github/issues/uiwjs/react-codesandbox.svg)](https://github.com/uiwjs/react-codesandbox/issues)
+[![Forks](https://img.shields.io/github/forks/uiwjs/react-codesandbox.svg)](https://github.com/uiwjs/react-codesandbox/network)
+[![Stars](https://img.shields.io/github/stars/uiwjs/react-codesandbox.svg)](https://github.com/uiwjs/react-codesandbox/stargazers)
+[![Release](https://img.shields.io/github/release/uiwjs/react-codesandbox)](https://github.com/uiwjs/react-codesandbox/releases)
+[![npm version](https://img.shields.io/npm/v/@uiw/react-codesandbox.svg)](https://www.npmjs.com/package/@uiw/react-codesandbox)
+
 A React component is provided that allows you to programmatically generate codesandbox projects from code samples on the fly.
 
 ## Install
