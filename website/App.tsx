@@ -18,6 +18,7 @@ const App: React.FC = () => {
           <Example />
           <ExampleKKT />
         </div>
+        <span className="App-arrow"></span>
       </header>
       <Markdown
         style={{ paddingTop: 25, maxWidth: 680, margin: '0 auto' }}

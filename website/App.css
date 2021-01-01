@@ -31,3 +31,54 @@ body {
 .App-link {
   color: #09d3ac;
 }
+
+.App-arrow {
+  display: block;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: 100;
+  background-size: 100% auto;
+  bottom: -18px;
+  left: 50%;
+  margin-left: -20px;
+  animation: animate 2s infinite;
+}
+.App-arrow::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  border-top: 3px solid #ccc;
+  border-left: 3px solid #ccc;
+  transform: rotate(45deg)
+}
+@keyframes animate {
+  0% {
+    opacity:0;-webkit-transform:translateY(0);transform:translateY(0)
+  }
+  33%,66% {
+    opacity:.8
+  }
+  50% {
+    opacity:.8;-webkit-transform:translateY(-8px);transform:translateY(-8px)
+  }
+  100% {
+    opacity:0;-webkit-transform:translateY(-16px);transform:translateY(-16px)
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    opacity:0;-webkit-transform:translateY(0)
+  }
+  33%,66% {
+    opacity:.8
+  }
+  50% {
+    opacity:.8;-webkit-transform:translateY(-8px)
+  }
+  100% {
+    opacity:0;-webkit-transform:translateY(-16px)
+  }
+}
