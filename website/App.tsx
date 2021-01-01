@@ -3,6 +3,7 @@ import Markdown from '@uiw/react-markdown-preview';
 import logo from './logo.svg';
 import MDStr from '../README.md';
 import Example from './Example';
+import ExampleKKT from './ExampleKKT';
 import './App.css';
 
 const App: React.FC = () => {
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <h2>React CodeSandbox</h2>
         <div>
           <Example />
+          <ExampleKKT />
         </div>
       </header>
       <Markdown
