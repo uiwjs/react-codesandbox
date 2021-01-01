@@ -1,0 +1,69 @@
+{
+  "name": "@uiw/react-codesandbox",
+  "version": "1.0.0",
+  "description": "A React component is provided that allows you to programmatically generate codesandbox projects from code samples on the fly.",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "typings": "lib/esm/index.d.ts",
+  "scripts": {
+    "doc": "kkt build --app-src ./website",
+    "start": "kkt start --app-src ./website",
+    "build": "npm run build:lib && npm run doc",
+    "build:lib": "npm run ts:build && npm run types:esm && npm run types:cjs && npm run css:build",
+    "watch": "npm run ts:watch & npm run types:watch & npm run css:watch",
+    "types:build": "tsbb types --sourceRoot src --target ESNEXT",
+    "types:watch": "npm run types:esm -- --watch & npm run types:cjs -- --watch",
+    "types:esm": "npm run types:build -- --outDir ../lib/esm",
+    "types:cjs": "npm run types:build -- --outDir ../lib/cjs",
+    "css:build": "compile-less -d src -o lib/esm",
+    "css:watch": "compile-less -d src -o lib/esm --watch",
+    "ts:watch": "tsbb watch --env-name esm:dev --env-name cjs --target react",
+    "ts:build": "tsbb build --target react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiwjs/react-codesandbox.git"
+  },
+  "author": "Kenny Wang <wowohoo@qq.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0",
+    "@babel/runtime": ">=7.10.0"
+  },
+  "dependencies": {
+    "codesandbox-import-utils": "2.2.2"
+  },
+  "devDependencies": {
+    "@kkt/less-modules": "6.0.11",
+    "@kkt/raw-modules": "6.0.11",
+    "@kkt/scope-plugin-options": "6.0.11",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@uiw/react-github-corners": "1.2.0",
+    "@uiw/react-markdown-preview": "2.1.1",
+    "compile-less-cli": "1.6.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "kkt": "6.0.10",
+    "tsbb": "1.7.9"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
