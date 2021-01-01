@@ -5,6 +5,7 @@
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "typings": "lib/esm/index.d.ts",
+  "homepage": "https://uiwjs.github.io/react-codesandbox/",
   "scripts": {
     "doc": "kkt build --app-src ./website",
     "start": "kkt start --app-src ./website",
