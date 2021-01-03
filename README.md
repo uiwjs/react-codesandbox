@@ -67,7 +67,7 @@ function Demo() {
 ## Props
 
 ```typescript
-type CodeSandboxProps = {
+type CodeSandboxProps = React.FormHTMLAttributes<HTMLFormElement> & {
   /**
    * Whether we should redirect to the embed instead of the editor.
    */
@@ -89,7 +89,7 @@ type CodeSandboxProps = {
     content?: string | Record<string, any>;
     isBinary?: boolean;
   }>
-}
+};
 ```
 
 ## Development

@@ -1,7 +1,7 @@
 import React from 'react';
 import { getParameters } from 'codesandbox-import-utils/lib/api/define';
 
-export type CodeSandboxProps = {
+export type CodeSandboxProps = React.FormHTMLAttributes<HTMLFormElement> & {
   /**
    * Whether we should redirect to the embed instead of the editor.
    */
@@ -23,7 +23,7 @@ export type CodeSandboxProps = {
     content?: string | Record<string, any>;
     isBinary?: boolean;
   }>
-}
+};
 
 const codeSandbox: React.FC<CodeSandboxProps> = (props) => {
   const { files = {}, embed, json, query, ...other } = props || {};
