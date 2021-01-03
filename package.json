@@ -1,6 +1,6 @@
 {
   "name": "@uiw/react-codesandbox",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React component is provided that allows you to programmatically generate codesandbox projects from code samples on the fly.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -28,6 +28,11 @@
   },
   "author": "Kenny Wang <wowohoo@qq.com>",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "codesandbox",
+    "react-codesandbox"
+  ],
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0",
