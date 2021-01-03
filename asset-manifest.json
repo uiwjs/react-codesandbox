@@ -939,8 +939,8 @@
     "static/js/468.635288d2.chunk.js": "/react-codesandbox/static/js/468.635288d2.chunk.js",
     "static/js/468.635288d2.chunk.js.map": "/react-codesandbox/static/js/468.635288d2.chunk.js.map",
     "main.css": "/react-codesandbox/static/css/main.075dc688.chunk.css",
-    "main.js": "/react-codesandbox/static/js/main.df77673b.chunk.js",
-    "main.js.map": "/react-codesandbox/static/js/main.df77673b.chunk.js.map",
+    "main.js": "/react-codesandbox/static/js/main.1aa9f8e1.chunk.js",
+    "main.js.map": "/react-codesandbox/static/js/main.1aa9f8e1.chunk.js.map",
     "runtime-main.js": "/react-codesandbox/static/js/runtime-main.8d7e4c28.js",
     "runtime-main.js.map": "/react-codesandbox/static/js/runtime-main.8d7e4c28.js.map",
     "static/css/471.9c23a760.chunk.css": "/react-codesandbox/static/css/471.9c23a760.chunk.css",
@@ -958,6 +958,6 @@
     "static/css/471.9c23a760.chunk.css",
     "static/js/471.c6d78a00.chunk.js",
     "static/css/main.075dc688.chunk.css",
-    "static/js/main.df77673b.chunk.js"
+    "static/js/main.1aa9f8e1.chunk.js"
   ]
 }
