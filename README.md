@@ -10,7 +10,7 @@ React CodeSandbox
 [![Release](https://img.shields.io/github/release/uiwjs/react-codesandbox)](https://github.com/uiwjs/react-codesandbox/releases)
 [![npm version](https://img.shields.io/npm/v/@uiw/react-codesandbox.svg)](https://www.npmjs.com/package/@uiw/react-codesandbox)
 
-A React component is provided that allows you to programmatically generate codesandbox projects from code samples on the fly.
+A React component is provided that allows you to programmatically generate [codesandbox](https://codesandbox.io/) projects from code samples on the fly.
 
 ## Install
 
