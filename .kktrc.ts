@@ -1,7 +1,6 @@
 import path from 'path';
 import webpack, {Configuration} from 'webpack';
-import { DevServerConfigFunction, LoaderConfOptions } from 'kkt';
-import WebpackDevServer from 'webpack-dev-server';
+import { LoaderConfOptions } from 'kkt';
 import lessModules from '@kkt/less-modules';
 import rawModules from '@kkt/raw-modules';
 import scopePluginOptions from '@kkt/scope-plugin-options';
@@ -20,14 +19,8 @@ export default (conf: Configuration, env: string, options: LoaderConfOptions) =>
   conf.plugins!.push(new webpack.DefinePlugin({
     VERSION: JSON.stringify(pkg.version),
   }));
-  conf.output = { ...conf.output, publicPath: './' }
+  if (env === 'production') {
+    conf.output = { ...conf.output, publicPath: './' }
+  }
   return conf;
-}
-
-
-export const devServer = (configFunction: DevServerConfigFunction) => (proxy: WebpackDevServer.ProxyConfigArrayItem[], allowedHost: string) => {
-  // Create the default config by calling configFunction with the proxy/allowedHost parameters
-  const config = configFunction(proxy, allowedHost);
-  // Return your customised Webpack Development Server config.
-  return config;
 }
