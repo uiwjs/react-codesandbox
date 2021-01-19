@@ -18,7 +18,7 @@ const Example = () => {
     <div style={{ height: 400, width: 800 }}>
       <CodeSandbox
         embed
-        query="view=split"
+        query="view=split&runonclick=1"
         files={{
           "package.json": {
             content: {
