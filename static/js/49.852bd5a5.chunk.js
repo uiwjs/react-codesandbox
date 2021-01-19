@@ -1,2 +1,0 @@
-(this["webpackJsonp@uiw/react-codesandbox"]=this["webpackJsonp@uiw/react-codesandbox"]||[]).push([[49],{105:function(n,a){Prism.languages.bnf={string:{pattern:/"[^\r\n"]*"|'[^\r\n']*'/},definition:{pattern:/<[^<>\r\n\t]+>(?=\s*::=)/,alias:["rule","keyword"],inside:{punctuation:/^<|>$/}},rule:{pattern:/<[^<>\r\n\t]+>/,inside:{punctuation:/^<|>$/}},operator:/::=|[|()[\]{}*+?]|\.{3}/},Prism.languages.rbnf=Prism.languages.bnf}}]);
-//# sourceMappingURL=49.852bd5a5.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonp@uiw/react-codesandbox"]=this["webpackJsonp@uiw/react-codesandbox"]||[]).push([[50],{109:function(e,a){Prism.languages.brainfuck={pointer:{pattern:/<|>/,alias:"keyword"},increment:{pattern:/\+/,alias:"inserted"},decrement:{pattern:/-/,alias:"deleted"},branching:{pattern:/\[|\]/,alias:"important"},operator:/[.,]/,comment:/\S+/}}}]);
+//# sourceMappingURL=50.1be86d26.chunk.js.map

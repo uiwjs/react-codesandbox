@@ -1,2 +1,0 @@
-(this["webpackJsonp@uiw/react-codesandbox"]=this["webpackJsonp@uiw/react-codesandbox"]||[]).push([[269],{325:function(n,a){Prism.languages["nand2tetris-hdl"]={comment:/\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,keyword:/\b(?:CHIP|IN|OUT|PARTS|BUILTIN|CLOCKED)\b/,boolean:/\b(?:true|false)\b/,function:/[A-Za-z][A-Za-z0-9]*(?=\()/,number:/\b\d+\b/,operator:/=|\.\./,punctuation:/[{}[\];(),:]/}}}]);
-//# sourceMappingURL=269.ff5c5997.chunk.js.map
