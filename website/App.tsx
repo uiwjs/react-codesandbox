@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import MDStr from '../README.md';
 import Example from './Example';
 import ExampleKKT from './ExampleKKT';
+import ExampleNoChild from './ExampleNoChild';
 import './App.css';
 
 const App: React.FC = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <div>
           <Example />
           <ExampleKKT />
+          <ExampleNoChild />
         </div>
         <span className="App-arrow"></span>
       </header>

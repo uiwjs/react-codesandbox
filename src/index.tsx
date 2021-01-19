@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { getParameters } from 'codesandbox-import-utils/lib/api/define';
 
 export type CodeSandboxProps = React.FormHTMLAttributes<HTMLFormElement> & {
@@ -25,9 +25,49 @@ export type CodeSandboxProps = React.FormHTMLAttributes<HTMLFormElement> & {
   }>
 };
 
+function request(files: CodeSandboxProps['files']) {
+  return fetch('https://codesandbox.io/api/v1/sandboxes/define?json=1', {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify({
+      files: files,
+    })
+  }).
+  then(x => x.json())
+}
+
 const codeSandbox: React.FC<CodeSandboxProps> = (props) => {
   const { files = {}, embed, json, query, ...other } = props || {};
   const parameters = getParameters({ files } as any);
+  const [url, setUrl] = useState<string>();
+  useEffect(() => {
+    if (!props.children) {
+      request(files).then(data => {
+        if (data && data.sandbox_id) {
+          const cusUrl = `https://codesandbox.io/${embed ? 'embed': 's'}/${data.sandbox_id}?${query ? query : ''}`;
+          setUrl(cusUrl);
+        }
+      });
+    }
+  }, [files]);
+  if (!props.children) {
+    return (
+      <iframe
+        src={url}
+        style={{
+          width: '100%',
+          height: '100%',
+          border: 0,
+          overflow: 'hidden'
+        }}
+        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+      />
+    )
+  }
   return (
     <form action="https://codesandbox.io/api/v1/sandboxes/define" method="POST" target="_blank" {...other}>
       <input type="hidden" name="parameters" value={parameters} />

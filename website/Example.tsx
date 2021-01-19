@@ -5,7 +5,7 @@ const code = `import React from 'react';
 import ReactDOM from 'react-dom';
 
 const element = (
-  <h1> Hello, CodeSandbox! </h1>
+  <h1> Hello, CodeSandbox!  </h1>
 );
 
 ReactDOM.render(
