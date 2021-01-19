@@ -944,19 +944,19 @@
     "runtime-main.js": "/react-codesandbox/static/js/runtime-main.8d7e4c28.js",
     "runtime-main.js.map": "/react-codesandbox/static/js/runtime-main.8d7e4c28.js.map",
     "static/css/471.cf704d7a.chunk.css": "/react-codesandbox/static/css/471.cf704d7a.chunk.css",
-    "static/js/471.c6d78a00.chunk.js": "/react-codesandbox/static/js/471.c6d78a00.chunk.js",
-    "static/js/471.c6d78a00.chunk.js.map": "/react-codesandbox/static/js/471.c6d78a00.chunk.js.map",
+    "static/js/471.db4e2394.chunk.js": "/react-codesandbox/static/js/471.db4e2394.chunk.js",
+    "static/js/471.db4e2394.chunk.js.map": "/react-codesandbox/static/js/471.db4e2394.chunk.js.map",
     "index.html": "/react-codesandbox/index.html",
     "static/css/471.cf704d7a.chunk.css.map": "/react-codesandbox/static/css/471.cf704d7a.chunk.css.map",
     "static/css/main.48c47fe5.chunk.css.map": "/react-codesandbox/static/css/main.48c47fe5.chunk.css.map",
-    "static/js/471.c6d78a00.chunk.js.LICENSE.txt": "/react-codesandbox/static/js/471.c6d78a00.chunk.js.LICENSE.txt",
+    "static/js/471.db4e2394.chunk.js.LICENSE.txt": "/react-codesandbox/static/js/471.db4e2394.chunk.js.LICENSE.txt",
     "static/js/72.343a183d.chunk.js.LICENSE.txt": "/react-codesandbox/static/js/72.343a183d.chunk.js.LICENSE.txt",
     "static/media/logo.3931a054.svg": "/react-codesandbox/static/media/logo.3931a054.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8d7e4c28.js",
     "static/css/471.cf704d7a.chunk.css",
-    "static/js/471.c6d78a00.chunk.js",
+    "static/js/471.db4e2394.chunk.js",
     "static/css/main.48c47fe5.chunk.css",
     "static/js/main.5bc3d978.chunk.js"
   ]
