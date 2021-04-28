@@ -39,7 +39,7 @@
     "@babel/runtime": ">=7.10.0"
   },
   "dependencies": {
-    "codesandbox-import-utils": "2.2.2"
+    "codesandbox-import-utils": "2.2.3"
   },
   "devDependencies": {
     "@kkt/less-modules": "6.8.2",
