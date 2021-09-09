@@ -29,19 +29,19 @@
     "@babel/runtime": ">=7.10.0"
   },
   "dependencies": {
-    "codesandbox-import-utils": "2.2.2"
+    "codesandbox-import-utils": "2.2.3"
   },
   "devDependencies": {
-    "@kkt/less-modules": "6.8.2",
-    "@kkt/raw-modules": "6.8.2",
-    "@kkt/scope-plugin-options": "6.8.2",
-    "@types/react": "17.0.3",
-    "@types/react-dom": "17.0.3",
-    "@uiw/react-github-corners": "1.2.0",
-    "@uiw/react-markdown-preview": "2.1.1",
+    "@kkt/less-modules": "6.11.0",
+    "@kkt/raw-modules": "6.11.0",
+    "@kkt/scope-plugin-options": "6.11.0",
+    "@types/react": "17.0.20",
+    "@types/react-dom": "17.0.9",
+    "@uiw/react-github-corners": "1.5.1",
+    "@uiw/react-markdown-preview": "3.3.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "kkt": "6.8.2",
+    "kkt": "6.11.0",
     "tsbb": "3.1.5"
   },
   "eslintConfig": {
