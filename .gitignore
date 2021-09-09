@@ -1,8 +1,10 @@
-node_modules
-lib
+cjs
+esm
 build
+node_modules
 npm-debug.log*
 package-lock.json
+
 .eslintcache
 .DS_Store
 .cache
