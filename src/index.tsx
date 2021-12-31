@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getParameters } from 'codesandbox-import-utils/lib/api/define';
 
-export type CodeSandboxBase = {
+export type CodeSandboxProps = React.FormHTMLAttributes<HTMLFormElement> & React.IframeHTMLAttributes<HTMLIFrameElement> & {
   /**
    * Whether we should redirect to the embed instead of the editor.
    */
@@ -23,11 +23,9 @@ export type CodeSandboxBase = {
     content?: string | Record<string, any>;
     isBinary?: boolean;
   }>
-}
+};
 
-export type CodeSandboxProps<T> = React.FormHTMLAttributes<T> & CodeSandboxBase;
-
-function request<T>(files: CodeSandboxProps<T>['files']) {
+function request(files: CodeSandboxProps['files']) {
   return fetch('https://codesandbox.io/api/v1/sandboxes/define?json=1', {
     method: "POST",
     headers: {
@@ -40,7 +38,7 @@ function request<T>(files: CodeSandboxProps<T>['files']) {
   }).then(x => x.json());
 }
 
-const CodeSandbox: React.FC<CodeSandboxProps<HTMLFormElement | HTMLIFrameElement>> = (props) => {
+const CodeSandbox: React.FC<CodeSandboxProps> = (props) => {
   const { files = {}, embed, json, query, ...other } = props || {};
   const parameters = getParameters({ files } as any);
   const [url, setUrl] = useState<string>();
