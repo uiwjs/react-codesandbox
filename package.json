@@ -37,7 +37,7 @@
     "codesandbox-import-utils": "2.2.3"
   },
   "devDependencies": {
-    "@kkt/less-modules": "6.11.0",
+    "@kkt/less-modules": "7.0.1",
     "@kkt/raw-modules": "6.11.0",
     "@kkt/scope-plugin-options": "6.11.0",
     "@types/react": "17.0.20",
