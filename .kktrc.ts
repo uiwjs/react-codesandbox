@@ -20,13 +20,6 @@ export default (conf: Configuration, env: 'development' | 'production', options:
     VERSION: JSON.stringify(pkg.version),
   }));
 
-  if (conf.module && conf.module.rules && conf.module.rules[0]) {
-    const rules = conf.module.rules[0];
-    if (typeof rules === 'object' && typeof rules.loader === 'string' && /source-map-loader/.test(rules.loader)) {
-      ;(conf.module.rules[0] as any).exclude = /((@babel(?:\/|\\{1,2})runtime)|codesandbox-import-utils)/;
-    }
-  }
-
   if (env === 'production') {
     conf.output = { ...conf.output, publicPath: './' }
   }
