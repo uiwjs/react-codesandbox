@@ -120,6 +120,16 @@ Your app is ready to be deployed!
 - [`@uiw/react-codepen`](https://github.com/uiwjs/react-codepen)
 - [`@uiw/react-stackblitz`](https://github.com/uiwjs/react-stackblitz)
 
-### License
+## Contributors
+
+As always, thanks to our amazing contributors!
+
+<a href="https://github.com/uiwjs/react-codepen/graphs/contributors">
+  <img src="https://uiwjs.github.io/react-codepen/CONTRIBUTORS.svg" />
+</a>
+
+Made with [github-action-contributors](https://github.com/jaywcjlove/github-action-contributors).
+
+## License
 
 Licensed under the MIT License.
