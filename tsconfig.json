@@ -17,12 +17,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "declaration": true,
-    "baseUrl": "./website",
+    "baseUrl": ".",
+    "outDir": "cjs",
     "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true,
     "noEmit": true
   },
   "include": [
-    "website"
+    "src"
   ]
 }
