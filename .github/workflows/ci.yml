@@ -13,14 +13,6 @@ jobs:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
 
-
-      - name: Generate Contributors Images
-        uses: jaywcjlove/github-action-contributors@main
-        with:
-          filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
-          output: build/CONTRIBUTORS.svg
-          avatarSize: 42
-
       - run: npm install
       - run: npm run build
       - run: npm run doc
@@ -34,6 +26,13 @@ jobs:
       - name: get tag version
         id: tag_version
         uses: jaywcjlove/changelog-generator@main
+
+      - name: Generate Contributors Images
+        uses: jaywcjlove/github-action-contributors@main
+        with:
+          filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
+          output: build/CONTRIBUTORS.svg
+          avatarSize: 42
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
