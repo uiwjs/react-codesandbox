@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-codesandbox/static/css/main.24d8a23e.css",
-    "main.js": "/react-codesandbox/static/js/main.5e5a81a8.js",
+    "main.js": "/react-codesandbox/static/js/main.439422b3.js",
     "refractor-prismjs-vendor.js": "/react-codesandbox/static/js/refractor-prismjs-vendor.d54cf053.js",
     "parse5-vendor.js": "/react-codesandbox/static/js/parse5-vendor.047ce034.js",
     "react-vendor.js": "/react-codesandbox/static/js/react-vendor.e804be52.js",
     "static/media/logo.svg": "/react-codesandbox/static/media/logo.3931a054f5ef8356122965d973d55570.svg",
     "index.html": "/react-codesandbox/index.html",
     "main.24d8a23e.css.map": "/react-codesandbox/static/css/main.24d8a23e.css.map",
-    "main.5e5a81a8.js.map": "/react-codesandbox/static/js/main.5e5a81a8.js.map",
+    "main.439422b3.js.map": "/react-codesandbox/static/js/main.439422b3.js.map",
     "refractor-prismjs-vendor.d54cf053.js.map": "/react-codesandbox/static/js/refractor-prismjs-vendor.d54cf053.js.map",
     "parse5-vendor.047ce034.js.map": "/react-codesandbox/static/js/parse5-vendor.047ce034.js.map",
     "react-vendor.e804be52.js.map": "/react-codesandbox/static/js/react-vendor.e804be52.js.map"
@@ -18,6 +18,6 @@
     "static/js/parse5-vendor.047ce034.js",
     "static/js/react-vendor.e804be52.js",
     "static/css/main.24d8a23e.css",
-    "static/js/main.5e5a81a8.js"
+    "static/js/main.439422b3.js"
   ]
 }
